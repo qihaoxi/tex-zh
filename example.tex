@@ -1,0 +1,98 @@
+\documentclass{beamer}
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+
+\mode<presentation> {
+%	\setbeamertemplate{background canvas}[vertical shading][bottom=red!15,top=blue!15]
+	\usefonttheme[onlysmall]{structurebold}
+	%\useinnertheme{inmargin}
+
+	%\usetheme{Hannover}
+	%\usetheme{default}
+	%\usetheme{AnnArbor}
+	%\usetheme{Antibes}
+	%\usetheme{Bergen}
+	%\usetheme{Berkeley}
+	%\usetheme{Berlin}
+	%\usetheme{Boadilla}
+	%\usetheme{CambridgeUS}
+	%\usetheme{Copenhagen}
+	%\usetheme{Darmstadt}
+	%\usetheme{Dresden}
+	%\usetheme{Frankfurt}
+	%\usetheme{Goettingen}
+	\usetheme{Hannover}
+	%\usetheme{Ilmenau}
+	%\usetheme{JuanLesPins}
+	%\usetheme{Luebeck}
+	%\usetheme{Madrid}
+	%\usetheme{Malmoe}
+	%\usetheme{Marburg}
+	%\usetheme{Montpellier}
+	%\usetheme{PaloAlto}
+	%\usetheme{Pittsburgh}
+	%\usetheme{Rochester}
+	%\usetheme{Singapore}
+	%\usetheme{Szeged}
+	%\usetheme{Warsaw}
+
+	\usecolortheme{rose}
+}
+\usepackage[english]{babel}
+%\usepackage[latin1]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{dsfont,bm}
+\setbeamertemplate{caption}[numbered]
+\renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
+\raggedright                        
+\setbeamertemplate{navigation symbols}{}      
+\setbeamercovered{dynamic}           
+\setbeamertemplate{footline}[frame number]      
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{indentfirst}
+
+\title{beamer example} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{qhxi} % Your name
+\institute[onecloud] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+	onecloud \\ % Your institution for the title page
+	\medskip
+	\textit{xiqh@onecloud.cn} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+
+\begin{document}
+\newcommand{\sech}{\mbox{sech}}
+\newtheorem{thm}{定理}[section]
+
+\frame{\titlepage}
+\frame{\tableofcontents}
+
+\begin{frame} \frametitle{欢迎}
+	欢迎使用beamer
+	\begin{thm}
+	%	  假设 $f(x)\in C[a,b]$, 那么 $\int_a^n &brvbar;f(x)&brvbar;\mathrm{d}x&lt;+\infty$.
+	\end{thm}
+
+	\begin{block}{勾股定理}  
+		直角三角形的斜边的平方等于两直角边的平方和。  
+		可以用符号语言表述为：设直角三角形ABC，其中$\angle C=90^\circ$则有  
+		\begin{equation}  
+			AB^2=BC^2+AC^2  
+		\end{equation}  
+	\end{block}  
+
+	\begin{itemize}
+		\item lean: lightweight, simple, accessible\\
+			\pause
+		\item portable: public, private, hybrid, multi cloud\\
+			\pause
+		\item extensible: modular, pluggable, hookable, composable\\
+			\pause
+		\item self-healing: auto-placement, auto-restart, auto-replication\\
+	\end{itemize}
+\end{frame}
+\end{document}
